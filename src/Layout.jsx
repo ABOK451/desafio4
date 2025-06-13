@@ -9,7 +9,7 @@ const Layout = () => {
         <nav style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
           <h1 style={{ margin: 0, fontSize: '1.5rem' }}>Mi Sitio</h1>
           <div>
-            <Link to="/" style={{ color: '#fff', textDecoration: 'none', marginRight: '30px' }}>Home</Link>
+            <Link to="/" style={{ color: '#fff', textDecoration: 'none', marginRight: '30px' }}>Home 2</Link>
             <Link to="/about" style={{ color: '#fff', textDecoration: 'none' }}>Acerca de</Link>
           </div>
         </nav>
