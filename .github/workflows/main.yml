@@ -24,12 +24,13 @@ jobs:
       - name: Build the React App
         run: npm run build  
 
-      - name: Build React App with Docker
+      - name: Construye React App con Docker
         run: |
           docker build -t react-build .
           CONTAINER_ID=$(docker create react-build)
-          docker cp $CONTAINER_ID:/app/build ./build
+          docker cp $CONTAINER_ID:/usr/share/nginx/html/desafio4 ./build
           docker rm $CONTAINER_ID
+
 
       - name: Save build folder (para Docker local)
         run: |
