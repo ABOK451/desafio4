@@ -13,6 +13,9 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
+      - name: Build the React App
+        run: npm run build  
+
       - name: Build React App with Docker
         run: |
           docker build -t react-build .
@@ -31,3 +34,7 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./build
+
+
+
+
