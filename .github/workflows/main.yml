@@ -12,6 +12,8 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+      - name: Build the React App
+        run: npm run build  
 
       - name: Build React App with Docker
         run: |
